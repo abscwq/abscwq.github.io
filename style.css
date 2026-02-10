@@ -1,12 +1,10 @@
 body {
-    background-color: #1d1d1d
-}
-
-h1 {
-    color: whitesmoke;
-}
-
-p {
+    background-color: #1d1d1d;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: -0.02em; 
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
     color: whitesmoke;
 }
 
@@ -16,8 +14,23 @@ hr {
 
 a {
     color: #4570ff;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
     color: #ffc400;
+}
+
+.content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    visibility: hidden;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
