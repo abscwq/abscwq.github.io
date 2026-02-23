@@ -1,4 +1,4 @@
-body {
+html, body {
     background-color: #1d1d1d;
     font-family: 'IBM Plex Mono', monospace;
     text-transform: uppercase;
@@ -23,8 +23,6 @@ a:hover {
 
 .content {
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-content {
