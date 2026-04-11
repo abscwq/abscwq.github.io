@@ -12,12 +12,25 @@ hr {
     border-color: #363636;
 }
 
-a {
+a, button {
     color: #4570ff;
     transition: color 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-a:hover {
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+a:hover, button:hover {
     color: #ffc400;
 }
 

@@ -7,14 +7,35 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style.css">
     </head>
-    
     <body>
         <div class="content">
             <h1>Vice City</h1>
             <hr>
-            <iframe id="full-iframe" src="https://vc.quenq.com" title="Vice City" allow="fullscreen; clipboard-read; clipboard-write" width="800" height="600"></iframe><br>
+            <br>
+
+            <iframe id="full-iframe" src="https://vc.quenq.com" title="Vice City" allow="fullscreen; clipboard-read; clipboard-write" width="800" height="600"></iframe>
+            
+            <br>
             <span>POWERED BY </span><a href="https://quenq.com/">QUENQ.COM</a><br><br>
+            <button id="fullscreen-btn">Fullscreen</button><br><br>
             <a href="/">Go back</a>
         </div>
+
+        <script>
+            const iframe = document.getElementById('full-iframe');
+            const btn = document.getElementById('fullscreen-btn');
+
+            btn.addEventListener('click', () => {
+                if (iframe.requestFullscreen) {
+                    iframe.requestFullscreen();
+                } else if (iframe.webkitRequestFullscreen) {
+                    iframe.webkitRequestFullscreen();
+                } else if (iframe.msRequestFullscreen) {
+                    iframe.msRequestFullscreen();
+                }
+
+                iframe.focus();
+            });
+        </script>
     </body>
 </html>
