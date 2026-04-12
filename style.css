@@ -8,10 +8,6 @@ html, body {
     color: whitesmoke;
 }
 
-hr {
-    border-color: #363636;
-}
-
 a, button {
     color: #4570ff;
     transition: color 0.3s ease-in-out;
@@ -36,6 +32,44 @@ a:hover, button:hover {
 
 .content {
     text-align: center;
+    position: relative;
+}
+
+.cheats-container {
+    text-align: left;
+    position: absolute;
+    left: 10px;
+}
+
+.cheat-scroll-box {
+    display: none;
+    max-height: 50vh;
+    overflow-y: auto;
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+#cheat-list {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+#cheat-list li {
+    margin-bottom: 8px;
+}
+
+.game-wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+#full-iframe {
+    width: 100%;
+    aspect-ratio: 4 / 3;
 }
 
 .footer-content {
@@ -44,4 +78,19 @@ a:hover, button:hover {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+    .cheats-container {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+        pointer-events: auto;
+    }
+    
+    .cheat-scroll-box {
+        margin: 10px auto;
+        width: 90%;
+        max-width: 500px;
+    }
 }
