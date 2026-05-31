@@ -9,10 +9,10 @@ html, body {
 }
 
 a, button {
-    color: #4570ff;
+    color: #bbbbbb;
     transition: color 0.3s ease-in-out;
     text-transform: uppercase;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -27,7 +27,7 @@ button {
 }
 
 a:hover, button:hover {
-    color: #ffc400;
+    color: #ffffff;
 }
 
 .content {
@@ -73,7 +73,7 @@ a:hover, button:hover {
 }
 
 .footer-content {
-    visibility: hidden;
+
     text-align: center;
     position: fixed;
     bottom: 0;
